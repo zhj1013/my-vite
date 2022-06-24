@@ -1,0 +1,22 @@
+.index_page {
+    width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    .index_main_wrap {
+        .index_main {
+            display: flex;
+            flex-wrap: wrap;
+            @mixin bordered {
+                outline: 1px solid #ccc;
+            }
+            .top {
+                flex-basis: 100%;
+                @include bordered;
+            }
+            .left, .right {
+                flex-basis: 50%;
+                @include bordered;
+            }
+        }
+    }
+}
